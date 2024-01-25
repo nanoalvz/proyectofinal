@@ -43,7 +43,7 @@ h1 {
 }
 
 body {
-  background-color: "$color-fondo";
+  background-color: rgb(0, 0, 0);
 }
 
 main {
@@ -73,9 +73,9 @@ main {
 }
 
 .btn {
-  color: rgb(11, 184, 63);
-  background-color: rgb(173, 255, 47);
+  color: rgb(155, 0, 0);
   border: solid 3px black;
+  background-image: linear-gradient(to right, greenyellow, rgb(7, 105, 37));
 }
 
 .cardInicio {
@@ -104,9 +104,11 @@ main {
   width: 400px;
   border-radius: 12%;
   cursor: pointer;
+  transition: all 1s;
 }
+
 .imgCard:hover {
-  zoom: 110%;
+  transform: scale(1.2);
 }
 
 .containerProducts {
@@ -124,8 +126,8 @@ main {
 }
 
 .btnContact {
-  background-color: gray;
-  color: white;
+  background-color: greenyellow;
+  color: green;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -147,6 +149,9 @@ main {
 
 /* body preguntas */
 .preguntitas {
+  color: white;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
 }
 
@@ -155,6 +160,23 @@ main {
   text-transform: uppercase;
   text-align: center;
   text-decoration: solid white;
+}
+
+.laPregunta {
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: solid green 3px;
+}
+
+.myCard {
+  width: 18rem;
+  margin-bottom: 2rem;
+  transition: all 1s;
+}
+
+.myCard:hover {
+  transform: scale(1.1);
 }
 
 footer {
