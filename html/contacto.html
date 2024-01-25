@@ -61,24 +61,27 @@
     </header>
     
 
-    <form class="form">
-        <label for="Nombre">Nombre</label>
-        <input type="text" id="Nombre">
-        <br>
-        <label for="Apellido">Apellido</label>
-        <input type="text" id="Apellido">
-        <br>
-        <label for="Telefono">Telefono</label>
-        <input type="text" id="Telefono">
-        <br>
-        <label for="Gmail">Gmail</label>
-        <input type="email" id="Gmail">
-        <br>
-        <label for="Mensaje">Mensaje</label>
-        <textarea name="" id="Mensaje" cols="30" rows="10" placeholder="Deje su mensaje"></textarea>
-        <br>
-        <input class="boton" type="submit">
-        <input class="boton" type="reset">
+    <form class="estiloForm">
+        <div class="mb-3 formulario">
+            <label for="nombreinput" class="form-label contact">nombre</label>
+            <input type="text" class="form-control" id="nombreinput" aria-describedby="emailHelp">
+            <label for="exampleInputPassword1" class="form-label contact">apellido</label>
+            <input type="password" class="form-control" id="apellidoinput">
+            <label for="exampleInputEmail1" class="form-label contact">Email</label>
+            <input type="email" class="form-control" id="emailinput" aria-describedby="emailHelp">
+            <label for="exampleInputPassword1" class="form-label contact">Password</label>
+            <input type="pasword" class="form-control" id="passwordinput">
+            <label for="exampleInputEmail1" class="form-label contact">telefono</label>
+            <input type="number" class="form-control" id="telefonoinput" aria-describedby="emailHelp">
+            <label for="exampleInputPassword1" class="form-label contact">direccion</label>
+            <input type="text" class="form-control" id="direccioninput">
+        </div>
+        <div class="mb-3 form-check ">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary btnContact">Submit</button>
+    </form>
 
 
     </form>
